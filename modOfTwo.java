@@ -1,4 +1,4 @@
-
+package JavaRevisions;
 
 public class modOfTwo {
     public static void main(String[] args) throws Exception {
