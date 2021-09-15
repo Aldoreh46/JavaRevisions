@@ -18,6 +18,10 @@ public class Scan
                     System.out.println("Enter String");
                     String myString = scanner.next();
                    
+                    if(myString.matches("[+-]?\\d*(\\.\\d+)?")){
+                    System.out.println("This is not an string");
+                     }else{
+
                     if(myString instanceof String)
                     {
                         System.out.println("myString is: " + myString);
@@ -34,6 +38,7 @@ public class Scan
                     {
                        System.out.println("This is not an string");
                     } 
+                }
 
                 }
                 catch(InputMismatchException exception)
