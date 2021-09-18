@@ -2,39 +2,39 @@ package JavaRevisions;
 
 import java.util.*;
 import java.io.*;
+import java.lang.Math;
+
+
 
 class Solution{
-    public static void main(String []argh){
-        Scanner in = new Scanner(System.in);
-        int t=in.nextInt();
-        
+    public static void main(String []argh)
+    {
 
-        for(int i=0;i<t;i++){
-            int a = in.nextInt();
-            int b = in.nextInt();
-            int n = in.nextInt();
-            int m = 1;
-            int sum = 0;
 
-            for(int j = 1; j <= n; j++){
-               
-                if( j == 1){
-                    sum = sum + (m * b) + a;
-                    System.out.print(sum + " ");
-                }else{
 
-                    sum = sum + ((m * b));
-                    m = 2 * m;
-                    System.out.print(sum + " ");
-                } 
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
 
-                
-            }   
+        for(int i=0;i<t;i++)
+        {
 
-            System.out.println(" ");
+            try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in:");
+                if(x>=-128 && x<=127)System.out.println("* byte");
+                if(x>=-32768 && x<= 32767)System.out.println("* short");
+                if(x>=(Math.pow(-2, 31)) && x<=((Math.pow(2, 31)) -1 ))System.out.println("* int");
+                if(x>=(Math.pow(-2, 63)) && x<=((Math.pow(2, 63)) -1 ))System.out.println("* long");
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
         }
-
-
-        in.close();
     }
 }
+
+
+
