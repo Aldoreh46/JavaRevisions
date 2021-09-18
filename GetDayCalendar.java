@@ -1,3 +1,5 @@
+package JavaRevisions;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -7,7 +9,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Resultdsd {
+class Result {
 
     /*
      * Complete the 'findDay' function below.
@@ -31,7 +33,7 @@ String dayOfWeek = cal.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Local
 
 }
 
-public class Solution {
+public class GetDayCalendar {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
