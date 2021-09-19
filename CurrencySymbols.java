@@ -3,7 +3,7 @@ package JavaRevisions;
 import java.util.*;
 import java.text.*;
 
-public class Solution {
+public class CurrencySymbols {
     
   //  public Locale(String language,String country){
  //    return       
