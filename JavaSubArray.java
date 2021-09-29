@@ -1,5 +1,7 @@
 package JavaRevisions;
 
+import java.util.Scanner;
+
 public class JavaSubArray {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
